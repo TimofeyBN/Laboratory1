@@ -10,18 +10,18 @@
     rez := False;
   Println($'Год високосный: {rez}');
   if rez then
-    Println('В году 366 дней')
+    Println('В году 366 дней.')
   else
-    Println('В году 365 дней');
+    Println('В году 365 дней.');
   
   var (frstDay, frstMonth) := ReadInteger2('Введте день и месяц первой даты: ');
   var (scdDay, scdMonth) := ReadInteger2('Введте день и месяц второй даты: ');
   Assert((frstDay in 1..31) and (scdDay in 1..31) and (frstMonth in 1..12) and (scdMonth in 1..12));
   
   if (12 - frstMonth) < (12 - scdMonth) then
-    Println($'1 дата ближе{newline}')
+    Println($'1 дата ближе{newline}.')
   else if (12 - frstMonth) > (12 - scdMonth) then
-    Println($'2 дата ближе{newline}')
+    Println($'2 дата ближе{newline}.')
   else
   if (31 - frstDay) < (31 - scdDay) then
     PrintLn($'1 дата ближе{newline}')
