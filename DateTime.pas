@@ -10,7 +10,7 @@
     rez := False;
   Println($'Год високосный: {rez}');
   if rez then
-    Println('В году 366 дней')
+    Println('В году 366 дней ')
   else
     Println('В году 365 дней');
   
